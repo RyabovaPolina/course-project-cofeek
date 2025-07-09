@@ -1,0 +1,152 @@
+.container-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.cofe-section > h3,
+.bakery-section > h3,
+.dessert-section > h3 {
+  margin-top: 2rem;
+  margin-bottom: 1.25rem;
+  text-align: left;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+span.type-coffee {
+  display: block;
+  font-size: 1.4rem;
+  font-family: Arimo;
+  height: 2.8rem;
+  border-bottom: 1px solid black;
+  margin-bottom: 1.25rem;
+}
+
+.table-hot-coffee,
+.table-ice-coffee,
+.table-backery,
+.table-dessert {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 1.25rem;
+  margin-bottom: 3.5rem;
+  width: 100%;
+}
+
+.drink-container,
+.bakery-container,
+.dessert-container {
+  border-bottom: 1px solid black;
+  align-items: center;
+  padding-bottom: 0.65rem;
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  height: auto;
+  flex-wrap: wrap;
+}
+
+span.drink-name,
+span.bakery-name,
+span.dessert-name {
+  flex: 1 1 100%; /* занимает всю ширину при переносе */
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+}
+
+.drink-info,
+.bakery-info,
+.dessert-info {
+  padding: 5px 0px;
+  flex-wrap: wrap;
+  flex: 1 1 100%; /* занимает всю ширину при переносе */
+}
+
+span.drink-size,
+span.bakery-size,
+span.dessert-size {
+  border-right: 1px solid black;
+  padding-right: 0.65rem;
+  font-size: 1rem;
+}
+
+span.drink-price,
+span.bakery-price,
+span.dessert-price {
+  padding-left: 0.65rem;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .cofe-section,
+  .bakery-section,
+  .dessert-section {
+    margin-bottom: 1.25rem;
+  }
+
+  .cofe-section > h3,
+  .bakery-section > h3,
+  .dessert-section > h3 {
+    margin-top: 1.25rem;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+  }
+
+  .cofe-section > span {
+    font-size: 1.25rem;
+  }
+
+  .drink-container,
+  .bakery-container,
+  .dessert-container {
+    border-bottom: 1px solid black;
+    align-items: center;
+    padding-bottom: 0.65rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  span.drink-name,
+  span.bakery-name,
+  span.dessert-name {
+    font-size: 1.125rem;
+    line-height: 1.4rem;
+  }
+
+  span.drink-size,
+  span.bakery-size,
+  span.dessert-size,
+  span.drink-price,
+  span.bakery-price,
+  span.dessert-price {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cofe-section,
+  .bakery-section,
+  .dessert-section {
+    margin-bottom: 0.65rem;
+  }
+
+  .table-hot-coffee,
+  .table-ice-coffee,
+  .table-backery,
+  .table-dessert {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1.25rem;
+    margin-bottom: 1.4rem;
+  }
+
+  span.drink-name,
+  span.bakery-name,
+  span.dessert-name {
+    font-size: 1.125rem;
+  }
+}

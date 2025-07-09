@@ -1,0 +1,122 @@
+.container-shop {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.container-shop > img {
+  margin-bottom: 0.65rem;
+}
+
+.container-shop-corns,
+.container-shop-drips {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 0.65rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.container-corns-elements,
+.container-drips-elements {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 100%;
+}
+
+.container-element {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  flex: 1 1 calc(33.333% - 30px); /* 3 в ряд, учитывая отступы */
+  max-width: calc(33.333% - 30px);
+  justify-content: space-between;
+}
+
+.name-and-photo,
+.quantity-and-price,
+.button-react {
+  width: 100%;
+  align-items: center;
+}
+
+.name-and-photo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.name-and-photo > span {
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+}
+
+.name-and-photo > img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.quantity-and-price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+}
+
+.quantity-and-price > span {
+  font-size: 1.25rem;
+  line-height: 1.7rem;
+  padding: 8px;
+}
+
+.element-quantity {
+  border-right: 1px solid black;
+}
+
+@media (max-width: 768px) {
+  .container-shop {
+    gap: 1.25rem;
+  }
+
+  .container-shop > img {
+    margin-bottom: 1.25rem;
+  }
+
+  .container-shop-corns,
+  .container-shop-drips {
+    width: 100%;
+    margin-bottom: 1.25rem;
+    margin-top: 1.25rem;
+  }
+
+  .name-and-photo > span {
+    font-size: 1.125rem;
+    line-height: 2.2rem;
+  }
+
+  .quantity-and-price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+  }
+
+  .quantity-and-price > span {
+    font-size: 1rem;
+    line-height: 1.4rem;
+    padding: 8px;
+  }
+}
+@media (max-width: 480px) {
+  .container-shop {
+    gap: 1rem;
+  }
+  .container-element {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}

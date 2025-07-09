@@ -1,0 +1,174 @@
+footer {
+  width: 100%;
+  background-color: #231d16;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding: 3.5rem 0px;
+}
+
+.footer-top {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1.6fr 1fr;
+  text-align: left;
+  gap: 2.5rem;
+}
+
+.logo-slogan,
+.name-company,
+.subscribe,
+.page-links {
+  padding: 3.5rem 0px;
+}
+
+.slogan > p {
+  padding: 10px 0px;
+  color: rgb(255, 249, 243);
+  font-size: 1.125rem;
+  font-family: "Martian Mono", monospace;
+  font-weight: 100;
+}
+
+.social-media {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+button.social-media-btn {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+button.social-media-btn > span {
+  display: block;
+}
+
+.subscribe > p {
+  color: white;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  font-family: "Martian Mono", monospace;
+}
+
+.subscribe-input {
+  display: flex;
+  gap: 0.65rem;
+}
+
+.subscribe-input > input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+}
+
+.subscribe-input > button {
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+
+.subscribe-input > button:hover {
+  background-color: rgb(251, 244, 230);
+  color: #6a563d;
+}
+
+.footer-bottom {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 2fr;
+  text-align: left;
+}
+
+.name-company {
+  color: white;
+}
+
+.page-links > nav.footer-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-nav > a {
+  color: white;
+}
+
+.footer-nav > a:hover {
+  color: #6a563d;
+}
+
+@media (max-width: 768px) {
+  footer {
+    width: 100%;
+    background-color: #231d16;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    padding: 2rem 0px;
+  }
+
+  .footer-top {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    text-align: left;
+    gap: 1.25rem;
+  }
+
+  .logo-slogan,
+  .name-company,
+  .subscribe,
+  .page-links {
+    padding: 0px;
+    padding-top: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  footer > .container {
+    width: 100%;
+    background-color: #231d16;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.25rem 1rem;
+  }
+
+  .footer-top {
+    gap: 1rem;
+  }
+
+  .logo-slogan,
+  .name-company,
+  .subscribe,
+  .page-links {
+    padding: 0px;
+    padding-top: 1.25rem;
+  }
+
+  .subscribe-input > button {
+    max-width: 60px;
+  }
+
+  .footer-bottom {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .page-links > nav.footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    justify-content: space-between;
+  }
+}

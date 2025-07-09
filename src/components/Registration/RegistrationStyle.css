@@ -1,0 +1,68 @@
+.container-registration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.container-form-registration {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 484px;
+  width: 100%;
+}
+
+.name-surname {
+  display: flex;
+  gap: 2rem;
+  height: auto;
+}
+
+.delivery-radio-input,
+.payment-radio-input {
+  display: flex;
+  align-items: center;
+}
+
+.input-text {
+  text-align: left;
+}
+
+span.password-required {
+  font-size: 14px;
+  color: rgb(138, 124, 107);
+  text-align: left;
+  line-height: 1rem;
+}
+
+.container-registration > button {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .container-registration {
+    padding-bottom: 1.25rem;
+  }
+
+  .container-form-registration,
+  .name-surname {
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-registration {
+    padding-bottom: 1rem;
+  }
+
+  .container-form-registration,
+  .name-surname {
+    gap: 1rem;
+  }
+
+  span.password-required {
+    font-size: 0.8rem;
+    line-height: 0.9rem;
+  }
+}

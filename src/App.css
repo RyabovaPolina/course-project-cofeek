@@ -1,7 +1,33 @@
 #root {
   width: 100%;
-  max-width: 1280px;
-  margin: 0;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-family: Arimo;
   text-align: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.container-main-page {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  #root {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  #root {
+    gap: 15px;
+  }
 }

@@ -1,0 +1,53 @@
+.discount-container {
+  margin: 1.125rem 0rem;
+  min-height: 250px;
+  width: 100%;
+  background-image: url("../../assets/image-discount.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  color: white;
+  padding: 1.56rem;
+  box-sizing: border-box;
+}
+
+.discount-container > h2 {
+  font-size: 5.625rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 2.5rem;
+}
+
+.discount-container > p {
+  background-color: white;
+  color: rgb(29, 18, 7);
+  padding: 1rem;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .discount-container > h2 {
+    font-size: 4.25rem;
+    margin-bottom: 1.4rem;
+  }
+
+  .discount-container > p {
+    font-size: 1.2rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .discount-container > h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .discount-container > p {
+    font-size: 1.125rem;
+  }
+}

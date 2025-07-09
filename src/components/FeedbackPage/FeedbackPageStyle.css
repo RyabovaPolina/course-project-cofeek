@@ -1,0 +1,307 @@
+.container-feedback-page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.container-image-text {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  height: 500px;
+}
+
+.container-image-1 {
+  width: 33%;
+}
+
+.container-image-1 > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container-text.main {
+  width: 66%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.125rem;
+}
+
+.container-text {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.text-feedback.page {
+  border: none;
+  padding-left: 0px;
+}
+
+.text-feedback.page > p {
+  padding: 0px 0.55rem;
+}
+
+.container-two-images-with-lines {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  height: 100%;
+}
+
+.container-lines {
+  width: 23%;
+  display: flex;
+  justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 490px;
+}
+
+.v-line {
+  border-left: 1px solid rgb(57, 26, 2);
+  height: 100%;
+}
+
+.images-2-3 {
+  display: flex;
+  gap: 30px;
+  width: 77%;
+}
+
+.container-image-2,
+.container-image-3 {
+  flex: 1;
+}
+
+.container-image-2 > img,
+.container-image-3 > img {
+  width: 100%;
+}
+
+.container-two-images {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+}
+
+.container-image-5,
+.container-image-6 {
+  flex: 1;
+}
+
+.container-image-5 > img,
+.container-image-6 > img {
+  width: 100%;
+}
+
+.container-for-three-elements {
+  display: grid;
+  width: 100%;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.element {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 2rem;
+}
+
+.container-text.container-text-7-8-9 {
+  border: 1px solid black;
+  font-size: 1.5rem;
+  padding: 0.55rem;
+}
+
+.container-image-7-8-9 {
+  width: 100%;
+  overflow: hidden;
+}
+
+.container-image-7-8-9 > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.big-elements {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  max-height: 900px;
+  width: 100%;
+  gap: 2rem;
+}
+
+.big-image {
+  overflow: hidden;
+}
+
+.big-image > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.big-text {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: space-around;
+}
+
+@media (max-width: 1100px) {
+  .container-for-three-elements {
+    display: grid;
+    width: 100%;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .element {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-for-three-elements {
+    gap: 1.125rem;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .element {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 1.125rem;
+  }
+
+  .container-text-7-8-9 {
+    border: 1px solid black;
+    font-size: 1.4rem;
+    padding: 0.6rem;
+    height: 100%;
+    width: 100%;
+  }
+
+  .container-image-7-8-9 {
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .text-feedback.page {
+    border: none;
+    font-size: 1.4rem;
+    padding-left: 0px;
+  }
+
+  .container-image-7-8-9 > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .big-elements {
+    grid-template-rows: 1fr auto;
+    gap: 1.125rem;
+  }
+
+  .container-text {
+    font-size: 1.4rem;
+    padding: 1.125rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-feedback-page {
+    gap: 1rem;
+  }
+
+  .container-image-text {
+    flex-direction: column;
+    gap: 1rem;
+    height: auto;
+  }
+
+  .container-image-1 {
+    height: 300px;
+    width: auto;
+  }
+
+  .container-image-1 > img {
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .container-text,
+  .container-text.main {
+    width: 100%;
+  }
+
+  .text-feedback.page {
+    border: none;
+    font-size: 1.125rem;
+    padding-left: 0px;
+  }
+
+  .container-two-images-with-lines {
+    flex-direction: column;
+    gap: 1rem;
+    height: auto;
+  }
+
+  .container-lines {
+    display: none;
+  }
+
+  .container-lines {
+    width: 100%;
+    height: 100%;
+  }
+
+  .images-2-3 {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .container-image-2,
+  .container-image-3 {
+    flex: 1;
+  }
+
+  .container-image-5,
+  .container-image-6 {
+    flex: 1;
+  }
+
+  .container-image-5 > img,
+  .container-image-6 > img {
+    width: 100%;
+  }
+
+  .element,
+  .big-elements {
+    gap: 1rem;
+  }
+
+  .container-text {
+    font-size: 1.125rem;
+    padding: 1rem;
+  }
+}

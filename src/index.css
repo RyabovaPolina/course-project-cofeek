@@ -1,11 +1,11 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Arimo;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
   color: #342a1e;
-  background-color: #ffffff;
+  background-color: #fffefa;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,8 +13,34 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+@font-face {
+  font-family: "HitchHike";
+  src: url(".//fonts/Hitch-hike.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Загружается позже, не блокирует отрисовку */
+}
+
+html {
+  font-size: 16px; /* Базово — 1rem = 16px */
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 15px; /* 1rem = 15px */
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 14px; /* 1rem = 14px */
+  }
+}
+
 a {
   font-weight: 500;
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.55rem; /* 25px */
   color: #342a1e;
   text-decoration: inherit;
   cursor: pointer;
@@ -26,38 +52,77 @@ a:hover {
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
   padding: 0;
   min-width: 320px;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column; /* Располагаем элементы вертикально */
-  align-items: center; /* Центрируем по горизонтали */
+  background-color: #fffefa;
+  color: #342a1e;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+h2 {
+  font-size: 1.75rem; /* 28px */
+  line-height: 2.5rem; /* 40px */
+  color: #6a563d;
+}
+
+p {
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.55rem; /* 25px */
+  color: #342a1e;
+}
+
+label {
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.55rem; /* 25px */
+}
+
+input {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid black;
+  padding: 1rem;
+  font-size: 1rem; /* 16px */
+  margin-top: 5px;
+  box-sizing: border-box;
+  color: black;
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+  border: 1px solid black;
+  padding: 1rem;
+  font-size: 1.125rem; /* 18px */
+  font-weight: 400;
+  color: #342a1e;
+  background-color: #fffefa;
   cursor: pointer;
-  transition: border-color 0.25s;
 }
+
 button:hover {
-  border-color: #646cff;
+  border-color: #ffd3a0;
+  background-color: #ffffff;
+  color: #342a1e;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+
+@media (max-width: 480px) {
+  p {
+    text-align: justify;
+  }
+
+  label {
+    font-size: 0.95rem;
+    line-height: 1.3rem;
+  }
+
+  input {
+    font-size: 0.9rem;
+  }
+
+  button {
+    width: 100%;
+  }
 }

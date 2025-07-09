@@ -1,0 +1,87 @@
+.container-ad-shop {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 4.5rem;
+  box-sizing: border-box;
+  text-align: left;
+  width: 100%;
+}
+
+.container-ad-shop > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+}
+
+.container-ad-shop-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: end;
+  gap: 2.5rem;
+}
+
+h1.ad-title {
+  font-size: 6.25rem;
+  line-height: 6.25rem;
+  color: #6b5131;
+}
+
+.ad-title > span {
+  display: block;
+}
+
+span.italic {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.container-ad-shop-text .description,
+.ad-shop-button {
+  padding: 0;
+  max-width: 700px;
+}
+
+@media (max-width: 1200px) {
+  h1.ad-title {
+    font-size: 5.375rem;
+    line-height: 5.375rem;
+  }
+}
+
+@media (max-width: 968px) {
+  h1.ad-title {
+    font-size: 4.125rem;
+    line-height: 4.125rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-ad-shop {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 1.15rem;
+  }
+
+  .container-ad-shop-text .description {
+    max-width: 100%;
+  }
+
+  .container-ad-shop-text {
+    order: 1;
+    gap: 1.15rem;
+  }
+
+  .container-ad-shop > img {
+    order: 2;
+    width: 100%;
+    min-height: 300px;
+    max-height: 350px;
+    object-fit: cover;
+  }
+
+  .ad-shop-button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,56 @@
+.bottom {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom > img {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  flex: 3;
+}
+
+a.button-like-link {
+  padding: 1rem;
+  max-width: 400px;
+  border: 1px solid black;
+  font-size: 1.125rem; /* 18px */
+  font-weight: 400;
+  color: #342a1e;
+  background-color: #fffefa;
+  cursor: pointer;
+  display: inline-block; /* чтобы работала ширина/высота */
+  text-align: center; /* по центру текст */
+}
+
+a.button-like-link:hover {
+  border-color: #ffd3a0;
+  background-color: #ffffff;
+  color: #342a1e;
+}
+
+/* Адаптивность на узких экранах */
+@media (max-width: 768px) {
+  .bottom > img {
+    max-width: 60%;
+  }
+  a.button-like-link {
+    padding: 12px;
+    font-size: 1rem; /* 16px */
+  }
+}
+
+@media (max-width: 480px) {
+  .bottom > img {
+    max-width: 50%;
+  }
+
+  a.button-like-link {
+    width: 100%;
+    padding: 0.65rem;
+    font-size: 0.95rem; /* 15px */
+  }
+}

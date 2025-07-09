@@ -1,0 +1,38 @@
+.container-authorization {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  height: 100%;
+}
+
+.container-form-authorization {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 484px;
+  width: 100%;
+}
+
+.container-form-authorization > button {
+  width: 100%;
+}
+
+.container-form-authorization > span {
+  font-size: 1.25rem;
+}
+
+.btn-registration {
+  display: inline-block;
+  width: auto;
+  border: none;
+  color: rgb(154, 96, 21);
+  padding: 0;
+}
+
+@media (max-width: 480px) {
+  .container-form-authorization {
+    gap: 1.25rem;
+  }
+}

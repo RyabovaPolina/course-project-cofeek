@@ -1,0 +1,46 @@
+.container-big-title {
+  padding: 2rem;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.container-big-title.auth {
+  padding: 2rem;
+  border-top: none;
+  border-bottom: none;
+}
+
+.big-title {
+  height: 3.4rem;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.big-title.auth {
+  height: 3.75rem;
+}
+
+@media (max-width: 768px) {
+  .big-title {
+    height: 3rem;
+  }
+
+  .big-title.auth {
+    height: 3rem;
+  }
+
+  .container-big-title {
+    padding: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .big-title {
+    height: 2.1rem;
+  }
+
+  .container-big-title {
+    padding: 0.65rem;
+  }
+}
